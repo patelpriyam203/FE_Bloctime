@@ -5,15 +5,18 @@
       restrict: 'E',
       scope: {},
       link: function(scope, element, attrs) {
-        var WORK_TIME = 1500;
-        var BREAK_TIME = 300;
+        var WORK_TIME = 15;
+        var BREAK_TIME = 3;
+        var LONG_BREAK_TIME = 18;
+
+        // var subtract = moment.duration().subtract(mom);
+        // console.log(subtract);
 
         scope.buttonStatus = 'START';
         scope.currentTime = WORK_TIME;
         var countdown = undefined;
         scope.onBreak = false;
-        // var seconds = 00;
-        // var minutes = 25;
+        scope.numberOfBreaks = 0;
 
 
         var startTimer = function() {
@@ -28,6 +31,7 @@
                   scope.currentTime = BREAK_TIME;
                   scope.buttonStatus = 'BREAK';
                   scope.onBreak = true;
+                  scope.numberOfBreaks++;
                 } else if (scope.onBreak == true) {
                   scope.currentTime = WORK_TIME;
                   scope.buttonStatus = 'WORK';
@@ -45,7 +49,12 @@
             countdown = undefined;
             scope.buttonStatus = 'START';
           } else if (scope.onBreak == true) {
-            scope.currentTime = BREAK_TIME;
+            if (scope.numberOfBreaks % 4 == 0) {
+              scope.currentTime = LONG_BREAK_TIME;
+            } else {
+              scope.currentTime = BREAK_TIME;
+            };
+            // scope.currentTime = BREAK_TIME;
             $interval.cancel(countdown);
             countdown = undefined;
             scope.buttonStatus = 'BREAK';
