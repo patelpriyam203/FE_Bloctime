@@ -5,9 +5,9 @@
       restrict: 'E',
       scope: {},
       link: function(scope, element, attrs) {
-        var WORK_TIME = 15;
-        var BREAK_TIME = 3;
-        var LONG_BREAK_TIME = 18;
+        var WORK_TIME = 1500;
+        var BREAK_TIME = 300;
+        var LONG_BREAK_TIME = 1800;
 
         // var subtract = moment.duration().subtract(mom);
         // console.log(subtract);
