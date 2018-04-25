@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid #379CFC; */
+  border-radius: 50px 50px;
+
+}
+
+.break {
+  /* margin: 30px 30px; */
+  padding-top: 25px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 250;
+  width: 300px;
+  height: 100px;
+  background: #379CFC;
+  border: 1px solid #379CFC;
+  border-radius: 50px 50px;
+}
+
+.clock {
+  margin-bottom: 30px;
+  font-size: 50px;
+  padding: 25px 0;
+  color: #CA3939;
+}
+
+.ion-play {
+  padding: 10px 15px 10px 17px;
+  font-size: 30px;
+  color: #379CFC;
+  border: 2px solid #379CFC;
+  border-radius: 50%;
+}
+
+.ion-stop {
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #379CFC;
+  border: 2px solid #379CFC;
+  border-radius: 50%;
+}
+
+.ion-skip-forward {
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #379CFC;
+  border: 2px solid #379CFC;
+  border-radius: 50%;
+}
+
+.breakCounter {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  color: #379CFC;
+}
