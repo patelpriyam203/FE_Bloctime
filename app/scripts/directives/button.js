@@ -17,13 +17,12 @@
 
 
         /* Buzz Library -- play a sound at the end */
-        var mySound = new buzz.sound("/sounds/ding", {
-          formats: ['mp3'],
+        var mySound = new buzz.sound("/assets/sounds/ding.mp3", {
           preload: true
         });
 
         scope.$watch('currentTime', function() {
-          if (scope.currentTime === 0) {
+          if (scope.currentTime == 0) {
             console.log(scope.currentTime);
             mySound.play();
           };
