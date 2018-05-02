@@ -8,6 +8,7 @@
             description: description
           };
           Task.addTask(newTask);
+          $scope.description = null;
         }
       };
 
