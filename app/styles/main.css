@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #F1F8FE;
+  background-color: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 25px;
@@ -22,9 +22,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid #379CFC; */
+  /* border: 1px solid black; */
   border-radius: 50px 50px;
-
 }
 
 .break {
@@ -33,47 +32,59 @@ body {
   font-size: 40px;
   color: #fff;
   font-weight: 250;
+  text-align: center;
   width: 300px;
   height: 100px;
-  background: #379CFC;
-  border: 1px solid #379CFC;
+  background: #979797;
+  border: 1px solid #979797;
   border-radius: 50px 50px;
+  /* border: 1px solid black; */
 }
 
 .clock {
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 50px;
+  text-align: center;
   padding: 25px 0;
   color: #CA3939;
+  /* border: 1px solid black; */
 }
 
 .ion-play {
+  margin-left: 95px;
   padding: 10px 15px 10px 17px;
   font-size: 30px;
-  color: #379CFC;
-  border: 2px solid #379CFC;
+  color: #979797;
+  border: 2px solid #979797;
   border-radius: 50%;
+  /* border: 1px solid black; */
 }
 
 .ion-stop {
+  margin-left: 95px;
   padding: 10px 15px;
   font-size: 30px;
-  color: #379CFC;
-  border: 2px solid #379CFC;
+  color: #979797;
+  border: 2px solid #979797;
   border-radius: 50%;
+  /* border: 1px solid black; */
 }
 
 .ion-skip-forward {
   padding: 10px 15px;
   font-size: 30px;
-  color: #379CFC;
-  border: 2px solid #379CFC;
+  color: #979797;
+  border: 2px solid #979797;
   border-radius: 50%;
+  /* border: 1px solid black; */
 }
 
 .breakCounter {
   font-size: 20px;
   margin-bottom: 30px;
   padding-top: 50px;
-  color: #379CFC;
+  color: #979797;
+  text-align: center;
+  /* border: 1px solid black; */
 }

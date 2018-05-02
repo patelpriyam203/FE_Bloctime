@@ -11,7 +11,14 @@
           url: '/',
           controller: 'HomeCtrl as home',
           templateUrl: '/templates/home.html'
-      });
+        });
+
+        // .state('task', {
+        //   url: '/task',
+        //   controller: 'TaskCtrl as task',
+        //   templateUrl: '/templates/task.html'
+        // });
+
   }
 
   angular

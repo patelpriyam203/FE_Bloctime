@@ -1,1 +1,16 @@
-<button></button>
+<timer-button></timer-button>
+
+<div class="task-box">
+  <div class="new-task">
+    <p class="task-heading">Task History</p>
+    <input type="text" class="task-field" ng-model="description" placeholder="Enter new description">
+    <button class="submit" ng-click="home.addTask(description)">Add Task</button>
+  </div>
+
+  <div class="task-content">
+    <div class="task-list" ng-class="{odd: ($index + 1) % 2 != 0, even: ($index + 1) % 2 == 0 }" ng-repeat="task in home.tasks">
+      <p class="task-description">{{ task.description }}</p>
+      <div class="ion-ios-close-outline" ng-click="home.removeTask(task)"></div>
+    </div>
+  </div>
+</div>

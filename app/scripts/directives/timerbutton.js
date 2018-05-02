@@ -1,7 +1,7 @@
 (function() {
-  function button($interval) {
+  function timerButton($interval) {
     return {
-      templateUrl: '/templates/directives/button.html',
+      templateUrl: '/templates/directives/timer_button.html',
       restrict: 'E',
       scope: {},
       link: function(scope, element, attrs) {
@@ -102,5 +102,5 @@
   };
   angular
     .module('Bloctime')
-    .directive('button', ['$interval', button]);
+    .directive('timerButton', ['$interval', timerButton]);
 })();
